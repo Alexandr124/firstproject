@@ -12,7 +12,7 @@
              title="Vaimo Customs Menu"
              module="Vaimo_Customs"
              sortOrder="0"
-             action="adminhtml/system_config/edit/section/vaimo_customs"
+             action="customblock/index/index"
              parent="Vaimo_Customs::main_menu"
              resource="Vaimo_Customs::main_menu" />
 
@@ -20,7 +20,7 @@
              title="Vaimo Custom Configurations"
              module="Vaimo_Customs"
              sortOrder="0"
-             action="customs/index/index"
+             action="customblock/index/index"
              parent="Vaimo_Customs::main_menu"
              resource="Vaimo_Customs::main_menu" />
 </menu>

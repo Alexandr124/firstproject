@@ -24,7 +24,17 @@
                         <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     </field>
                 </group>
-
             </section>
+
+                <section id="customer">
+                    <group id="create_account">
+                        <field id="show_address_fields" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                            <label>Show address fields</label>
+                            <comment>Address Information on create account page (my comment)</comment>
+                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        </field>
+                    </group>
+                </section>
+
     </system>
 </config>

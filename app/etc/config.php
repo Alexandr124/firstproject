@@ -131,6 +131,7 @@ return [
         'Temando_Shipping' => 1,
         'Vaimo_Customs' => 1,
         'Vaimo_Helloworld' => 1,
+        'Vaimo_Sample' => 1,
         'Vertex_Tax' => 1
     ]
 ];
