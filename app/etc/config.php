@@ -129,9 +129,10 @@ return [
         'Klarna_Kp' => 1,
         'Magento_PaypalReCaptcha' => 1,
         'Temando_Shipping' => 1,
-        'Vaimo_Customs' => 1,
+        'Vaimo_Carousel' => 1,
+        'Vaimo_Customs' => 0,
         'Vaimo_Helloworld' => 1,
-        'Vaimo_Sample' => 1,
+        'Vaimo_OwlCarousel' => 1,
         'Vertex_Tax' => 1
     ]
 ];

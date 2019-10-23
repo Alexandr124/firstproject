@@ -7,4 +7,5 @@ class Helloworld extends \Magento\Framework\View\Element\Template
     {
         return 'Hello world!';
     }
+
 }

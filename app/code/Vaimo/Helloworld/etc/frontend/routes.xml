@@ -5,5 +5,8 @@
         <route id="helloworld" frontName="helloworld">
             <module name="Vaimo_Helloworld" />
         </route>
+        <route id="testblock" frontName="testblock">
+            <module name="Vaimo_Helloworld" />
+        </route>
     </router>
 </config>
