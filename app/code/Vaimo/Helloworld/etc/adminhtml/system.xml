@@ -1,24 +1,32 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <tab id="vaimo" translate="label" sortOrder="3000">
-            <label>Vaimo Custom Settings</label>
+            <label>Vaimo Social Links</label>
         </tab>
         <section id="vaimo_customs" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>Brand Options</label>
+            <label>Social Links</label>
             <tab>vaimo</tab>
             <resource>Vaimo_Customs::main_menu</resource>
-            <group id="kit_prices" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Brand Configuration</label>
-                <field id="startup" translate="label" type="text" sortOrder="10"
+            <group id="socials" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Social Networks Links</label>
+                <field id="instagram" translate="label" type="text" sortOrder="10"
                        showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Startup Kit price</label>
+                    <label>Instagram URL:</label>
+                </field>
+                <field id="facebook" translate="label" type="text" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Facebook URL:</label>
                 </field>
 
+                <field id="telegram" translate="label" type="text" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Telegram URL:</label>
+                </field>
 
             </group>
 
             <group id="additional" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
-                <label>Checkbox test</label>
+                <label>Module Settings</label>
                 <field id="test_checkbox" translate="label" type="checkbox" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Module Enable</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>

@@ -23,7 +23,7 @@
 
 //  Color nesting
 @panel__background-color: #00C322;
-@border-color__base: #79a22e;
+@border-color__base: @color-darkslategray;;
 
 //  Headings
 @h3__font-weight: @font-weight__semibold;
@@ -60,7 +60,7 @@
 //  Navigation
 //  ---------------------------------------------
 
-@navigation__background: @color-green-main;
+@navigation__background: @color-darkslategray;
 @navigation-level0-item__active__color: @primary__color;
 @navigation-level0-item__active__border-color: @active__color;
 @navigation-desktop-level0-item__active__border-color: @active__color;
@@ -76,7 +76,7 @@
 @submenu-desktop-item__active__color: @navigation-level0-item__active__color;
 
 //  Tabs
-@tab-control__color: @color-white;
+@tab-control__color: @color-gray43;
 @tab-control__font-weight: @font-weight__regular;
 @tab-control__height: @indent__base*2;
 @tab-control__margin-right: -1px;
@@ -119,7 +119,7 @@
 @button__font-weight: @font-weight__semibold;
 
 //  Default = secondary button
-@button__background: @color-white;
+@button__background: @color-gray-darken0;
 @button__border: 1px solid @border-color__base;
 @button__hover__color: @button__color;
 @button__hover__background: darken(@button__background, 5%);
@@ -172,7 +172,7 @@
 
 //  Select
 @select__background: @form-element-input__background url('../images/select-bg.svg') no-repeat 100% 45%;
-@select__border: 1px solid @border-color__base;
+@select__border: 1px solid @color-darkslategray;;
 @select__height: 32px;
 @select__padding: 4px 25px @indent__xs @indent__s;
 
@@ -195,7 +195,7 @@
 @form-field-note-icon-font__content: false;
 
 //  Placeholder
-@form-element-input-placeholder__color: @color-gray34;
+@form-element-input-placeholder__color: @color-darkslategray;
 
 //
 //  Pager
@@ -303,3 +303,4 @@
 //  ---------------------------------------------
 
 @copyright__background-color: @color-gray-middle4;
+

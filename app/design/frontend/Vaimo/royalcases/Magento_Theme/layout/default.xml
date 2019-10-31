@@ -17,5 +17,32 @@
                 <argument name="logo_img_height" xsi:type="number">86</argument>
             </arguments>
         </referenceBlock>
+
+        <!--<referenceContainer name="footer">-->
+                <!--<block class="Vaimo\Helloworld\Block\Widget\Samplewidget"-->
+                       <!--name="samplewidget"-->
+                       <!--template="widget/samplewidget.phtml"-->
+                       <!--after="form.subscribe"/>-->
+
+        <!--</referenceContainer>-->
+        <referenceContainer name="footer">
+
+            <container name="footer.socials.wrapper" htmlTag="div" htmlClass="footer-socials-wrapper" after="form.subscribe">
+                <block class="Vaimo\Helloworld\Block\Widget\Samplewidget"
+                       name="samplewidget"
+                       template="widget/samplewidget.phtml"
+                     />
+
+                <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="samplewidget" template="Magento_Newsletter::subscribe.phtml"/>
+            </container>
+
+            <container name="footer.contact.links" htmlTag="div" htmlClass="footer-contact-links" before="footer.socials.wrapper">
+                <block class="Vaimo\Helloworld\Block\Widget\Samplewidget"
+                       name="samplewidget2"
+                       template="widget/samplewidget.phtml"
+                />
+            </container>
+        </referenceContainer>
+
     </body>
 </page>

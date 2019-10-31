@@ -19,13 +19,20 @@ class UpgradeSchema implements UpgradeSchemaInterface
             //be careful, since everything below is true for installation !
         }
 
-        if (version_compare($context->getVersion(), '1.0.1') < 0) {
-            //code to upgrade to 1.0.1
+        if (version_compare($context->getVersion(), '1.0.2', '<')) {
+            $setup->getConnection()->addColumn(
+                $setup->getTable('vaimo_helloworld'),
+                'greeting',
+                [
+                    'type' => \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+                    'length' => 16,
+                    'nullable' => false,
+                    'default' => '',
+                    'comment' => 'Greeting'
+                ]
+            );
         }
 
-        if (version_compare($context->getVersion(), '1.0.3') < 0) {
-            //code to upgrade to 1.0.3
-        }
 
         $setup->endSetup();
     }
