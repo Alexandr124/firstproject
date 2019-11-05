@@ -134,6 +134,7 @@ return [
         'Vaimo_Helloworld' => 1,
         'Vaimo_Moduleat' => 1,
         'Vaimo_OwlCarousel' => 1,
+        'Vaimo_Quote' => 1,
         'Vaimo_Test_attribute' => 1,
         'Vertex_Tax' => 1
     ]

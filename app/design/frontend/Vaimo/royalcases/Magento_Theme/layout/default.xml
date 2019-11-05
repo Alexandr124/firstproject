@@ -27,6 +27,14 @@
         <!--</referenceContainer>-->
         <referenceContainer name="footer">
 
+            <container name="footer.links.wrapper" htmlTag="div" htmlClass="footer-links-wrapper" before="-">
+                <block class="Magento\Framework\View\Element\Html\Links" name="footer_links">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">footer links</argument>
+                    </arguments>
+                </block>
+            </container>
+
             <container name="footer.socials.wrapper" htmlTag="div" htmlClass="footer-socials-wrapper" after="form.subscribe">
                 <block class="Vaimo\Helloworld\Block\Widget\Samplewidget"
                        name="samplewidget"
@@ -37,11 +45,15 @@
             </container>
 
             <container name="footer.contact.links" htmlTag="div" htmlClass="footer-contact-links" before="footer.socials.wrapper">
-                <block class="Vaimo\Helloworld\Block\Widget\Samplewidget"
-                       name="samplewidget2"
-                       template="widget/samplewidget.phtml"
-                />
+                <!--<block class="Vaimo\Helloworld\Block\Widget\Samplewidget"-->
+                       <!--name="samplewidget2"-->
+                       <!--template="widget/samplewidget.phtml"-->
+                <!--/>-->
+
+                <block class="Vaimo\Helloworld\Block\DynamicBlock" name="dynamicblock" template="dynamicblock.phtml" />
+
             </container>
+
         </referenceContainer>
 
     </body>

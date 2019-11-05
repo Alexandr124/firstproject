@@ -14,6 +14,11 @@
   body {
     background-color: @color-white;
   }
+  .page-main{
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
 
   .header.links{
@@ -27,8 +32,8 @@
 
   .navigation li.level0 {
     border: 1px;
-    border-color: black;
     margin-left: 10%;
+    font-weight: 100;
   }
 
   .page-footer {
@@ -42,19 +47,30 @@
   }
 
   .footer-socials-wrapper{
-    float:right;
-    margin-right: 15%;
-    margin-left: 15%;
+    width: 30%;
+    margin: 1.6%;
+
+    order: 1;
   }
 
   .block.newsletter{
     width:100%;
   }
 
+  .footer-links-wrapper{
+    width: 30%;
+    margin: 1.6%;
+
+    order: 0;
+
+  }
+
   .footer-contact-links{
-    height: 40px;
-    width: 300px;
-    float: right;
+    width: 30%;
+    margin: 1.6%;
+
+    order: 2;
+
   }
 
   .samplewidget{
@@ -64,6 +80,25 @@
 
   .ui-id-2{
     background: #0fa7ff;
+  }
+
+
+  .footer.content{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+
+    max-width: 100%;
   }
 
 }

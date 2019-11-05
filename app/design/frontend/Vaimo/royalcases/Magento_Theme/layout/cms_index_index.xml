@@ -9,6 +9,7 @@
         <referenceContainer name="content">
 
             <block class="Magento\Framework\View\Element\Template" name="customs" template="Magento_Theme::customs.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="our_advantages" template="Magento_Theme::our_advantages.phtml" />
 
         </referenceContainer>
 
